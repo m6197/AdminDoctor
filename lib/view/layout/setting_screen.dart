@@ -1,8 +1,8 @@
-import 'package:course1/shared/components/components.dart';
+import 'package:course1/Shared/network/local/chache_helper.dart';
+import 'package:course1/view/shared/components/components.dart';
 import 'package:flutter/material.dart';
 import '../login/login_screen.dart';
 import 'Personal Data.dart';
-
 
 class setting extends StatelessWidget {
   @override
@@ -30,21 +30,23 @@ class setting extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(height: 20,),
-
+        const SizedBox(
+          height: 20,
+        ),
         InkWell(
           onTap: () {},
-          child:Padding(
+          child: Padding(
             padding: const EdgeInsets.all(15.0),
             child: Container(
-              child:  Row(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-
                   Row(
                     children: [
                       Image.asset('assets/image/noun-language-1.png'),
-                      const SizedBox(width: 15,),
+                      const SizedBox(
+                        width: 15,
+                      ),
                       const Text('Languages'),
                     ],
                   ),
@@ -52,11 +54,10 @@ class setting extends StatelessWidget {
                     children: const [
                       Icon(
                         Icons.arrow_forward_ios,
-                        color: Color.fromRGBO(1, 205, 170,90),
+                        color: Color.fromRGBO(1, 205, 170, 90),
                       ),
                     ],
                   ),
-
                 ],
               ),
             ),
@@ -64,17 +65,18 @@ class setting extends StatelessWidget {
         ),
         InkWell(
           onTap: () {},
-          child:Padding(
+          child: Padding(
             padding: const EdgeInsets.all(15.0),
             child: Container(
-              child:  Row(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-
                   Row(
                     children: [
                       Image.asset('assets/image/noun-faq-135560.png'),
-                      const SizedBox(width: 15,),
+                      const SizedBox(
+                        width: 15,
+                      ),
                       const Text('FAQs'),
                     ],
                   ),
@@ -82,11 +84,10 @@ class setting extends StatelessWidget {
                     children: const [
                       Icon(
                         Icons.arrow_forward_ios,
-                        color: Color.fromRGBO(1, 205, 170,90),
+                        color: Color.fromRGBO(1, 205, 170, 90),
                       ),
                     ],
                   ),
-
                 ],
               ),
             ),
@@ -94,17 +95,18 @@ class setting extends StatelessWidget {
         ),
         InkWell(
           onTap: () {},
-          child:Padding(
+          child: Padding(
             padding: const EdgeInsets.all(15.0),
             child: Container(
-              child:  Row(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-
                   Row(
                     children: [
                       Image.asset('assets/image/noun-community-.png'),
-                      const SizedBox(width: 15,),
+                      const SizedBox(
+                        width: 15,
+                      ),
                       const Text('Community'),
                     ],
                   ),
@@ -112,36 +114,35 @@ class setting extends StatelessWidget {
                     children: const [
                       Icon(
                         Icons.arrow_forward_ios,
-                        color: Color.fromRGBO(1, 205, 170,90),
+                        color: Color.fromRGBO(1, 205, 170, 90),
                       ),
                     ],
                   ),
-
                 ],
               ),
             ),
           ),
         ),
-      Expanded(
-          child:
-      Align(
-          alignment: Alignment.bottomCenter,
-          child:
-        defaultButton(
-            width: 240,
-            text: 'Log out',
-            function: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const loginScreen()),
-                );
-              }
+        Expanded(
+          child: Align(
+            alignment: Alignment.bottomCenter,
+            child: defaultButton(
+                width: 240,
+                text: 'Log out',
+                function: () {
+                  CacheHelper.removeData(key: "token");
+                  CacheHelper.removeData(key: "id");
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => loginScreen()),
+                  );
+                }),
+          ),
         ),
-      ),
+        const SizedBox(
+          height: 20,
         ),
-        const SizedBox(height: 20,),
-      ]
-      ),
+      ]),
     );
   }
 }

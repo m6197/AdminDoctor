@@ -1,7 +1,6 @@
-
 import 'dart:ui';
 
-import 'package:course1/layout/ProfilePatients.dart';
+import 'package:course1/view/layout/ProfilePatients.dart';
 import 'package:flutter/material.dart';
 
 class Patients extends StatelessWidget {
@@ -39,76 +38,31 @@ class Patients extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.only(left: 15),
-              child: Align(alignment: Alignment.centerLeft, child: Text("10 Patients",
-              style: const TextStyle(
-                color: Color.fromARGB(250, 1, 91, 76),
-                fontWeight: FontWeight.bold,
-                fontSize: 15,
-
-              ),)),
+              child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "10 Patients",
+                    style: const TextStyle(
+                      color: Color.fromARGB(250, 1, 91, 76),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                    ),
+                  )),
             ),
-
             Padding(
-              padding: const EdgeInsets.only(left: 10,top: 10,),
-              // Align(
-                //  alignment: Alignment.centerLeft,
-                //  child: new Text("10 Patients")),
-              child: InkWell (
-                onTap: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const PatientsProfile()),
-                  );
-                },
-                child: Container(
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Image.asset(
-                          'assets/image/Rectangle 52.png',
-                          width: 52,
-                          height: 52,
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only( left: 25),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
-                            Text(
-                              ' Ahmed Mohamed',
-                              style: TextStyle(
-                                color: Color.fromARGB(250, 1, 91, 76),
-                                fontWeight: FontWeight.bold,
-                                fontSize: 13,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+              padding: const EdgeInsets.only(
+                left: 10,
+                top: 10,
               ),
-            ),
-            const Divider(
-              color: Color.fromARGB(100, 1, 91, 76),
-              height: 20,
-              thickness: 2,
-              indent: 10,
-              endIndent: 10,
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 10,top: 10,),
               // Align(
               //  alignment: Alignment.centerLeft,
               //  child: new Text("10 Patients")),
-              child: InkWell (
-                onTap: (){
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const PatientsProfile()),
+                    MaterialPageRoute(
+                        builder: (context) => const PatientsProfile()),
                   );
                 },
                 child: Container(
@@ -123,7 +77,7 @@ class Patients extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only( left: 25),
+                        padding: const EdgeInsets.only(left: 25),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const [
@@ -151,15 +105,19 @@ class Patients extends StatelessWidget {
               endIndent: 10,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 10,top: 10,),
+              padding: const EdgeInsets.only(
+                left: 10,
+                top: 10,
+              ),
               // Align(
               //  alignment: Alignment.centerLeft,
               //  child: new Text("10 Patients")),
-              child: InkWell (
-                onTap: (){
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const PatientsProfile()),
+                    MaterialPageRoute(
+                        builder: (context) => const PatientsProfile()),
                   );
                 },
                 child: Container(
@@ -174,7 +132,7 @@ class Patients extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only( left: 25),
+                        padding: const EdgeInsets.only(left: 25),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const [
@@ -202,15 +160,19 @@ class Patients extends StatelessWidget {
               endIndent: 10,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 10,top: 10,),
+              padding: const EdgeInsets.only(
+                left: 10,
+                top: 10,
+              ),
               // Align(
               //  alignment: Alignment.centerLeft,
               //  child: new Text("10 Patients")),
-              child: InkWell (
-                onTap: (){
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const PatientsProfile()),
+                    MaterialPageRoute(
+                        builder: (context) => const PatientsProfile()),
                   );
                 },
                 child: Container(
@@ -225,7 +187,7 @@ class Patients extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only( left: 25),
+                        padding: const EdgeInsets.only(left: 25),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const [
@@ -253,15 +215,19 @@ class Patients extends StatelessWidget {
               endIndent: 10,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 10,top: 10,),
+              padding: const EdgeInsets.only(
+                left: 10,
+                top: 10,
+              ),
               // Align(
               //  alignment: Alignment.centerLeft,
               //  child: new Text("10 Patients")),
-              child: InkWell (
-                onTap: (){
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const PatientsProfile()),
+                    MaterialPageRoute(
+                        builder: (context) => const PatientsProfile()),
                   );
                 },
                 child: Container(
@@ -276,7 +242,7 @@ class Patients extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only( left: 25),
+                        padding: const EdgeInsets.only(left: 25),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const [
@@ -304,15 +270,19 @@ class Patients extends StatelessWidget {
               endIndent: 10,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 10,top: 10,),
+              padding: const EdgeInsets.only(
+                left: 10,
+                top: 10,
+              ),
               // Align(
               //  alignment: Alignment.centerLeft,
               //  child: new Text("10 Patients")),
-              child: InkWell (
-                onTap: (){
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const PatientsProfile()),
+                    MaterialPageRoute(
+                        builder: (context) => const PatientsProfile()),
                   );
                 },
                 child: Container(
@@ -327,7 +297,7 @@ class Patients extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only( left: 25),
+                        padding: const EdgeInsets.only(left: 25),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const [
@@ -355,15 +325,19 @@ class Patients extends StatelessWidget {
               endIndent: 10,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 10,top: 10,),
+              padding: const EdgeInsets.only(
+                left: 10,
+                top: 10,
+              ),
               // Align(
               //  alignment: Alignment.centerLeft,
               //  child: new Text("10 Patients")),
-              child: InkWell (
-                onTap: (){
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const PatientsProfile()),
+                    MaterialPageRoute(
+                        builder: (context) => const PatientsProfile()),
                   );
                 },
                 child: Container(
@@ -378,7 +352,7 @@ class Patients extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only( left: 25),
+                        padding: const EdgeInsets.only(left: 25),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const [
@@ -405,7 +379,61 @@ class Patients extends StatelessWidget {
               indent: 10,
               endIndent: 10,
             ),
-
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 10,
+                top: 10,
+              ),
+              // Align(
+              //  alignment: Alignment.centerLeft,
+              //  child: new Text("10 Patients")),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const PatientsProfile()),
+                  );
+                },
+                child: Container(
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10),
+                        child: Image.asset(
+                          'assets/image/Rectangle 52.png',
+                          width: 52,
+                          height: 52,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 25),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const [
+                            Text(
+                              ' Ahmed Mohamed',
+                              style: TextStyle(
+                                color: Color.fromARGB(250, 1, 91, 76),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 13,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            const Divider(
+              color: Color.fromARGB(100, 1, 91, 76),
+              height: 20,
+              thickness: 2,
+              indent: 10,
+              endIndent: 10,
+            ),
           ],
         ),
       ),
